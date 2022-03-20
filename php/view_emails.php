@@ -49,7 +49,7 @@ echo "<tr>
 <th>".$Email_Status."</td>
 <th>".$Email_Status_Date."</td>
 <th>".$Email_Status_Time."</td>
-<td style='text-algin:left;'>".$Email_Body."</td>
+<td style='text-align:left;'>".$Email_Body."</td>
 </tr>";
 }
 ?>

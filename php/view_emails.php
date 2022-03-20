@@ -6,7 +6,7 @@ table {
 
 td, th, tr {
   border: 1px solid black;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
@@ -19,13 +19,13 @@ include 'conn.php';
 
 echo "<table>
 <tr>
-<th style='text-align:center;'>#</th>
-<th style='text-align:center;'>Company Email</th>
-<th style='text-align:center;'>Company Name</th>
-<th style='text-align:center;'>Email Status</th>
-<th style='text-align:center;'>Email Status Date</th>
-<th style='text-align:center;'>Email Status Time</th>
-<th style='text-align:center;'>Email Body</th>
+<th>#</th>
+<th>Company Email</th>
+<th>Company Name</th>
+<th>Email Status</th>
+<th>Email Status Date</th>
+<th>Email Status Time</th>
+<th>Email Body</th>
 </tr>";
 
 $sql_0 = "SELECT * FROM emails_cv";
@@ -43,13 +43,13 @@ $Email_Status_Time=$row_0['Email_Status_Time'];
 $Email_Body=$row_0['Email_Body'];
 
 echo "<tr>
-<td style='text-align:center;'>".$ID."</td>
-<td style='text-align:center;'>".$Company_Email."</td>
-<td style='text-align:center;'>".$Company_Name."</td>
-<td style='text-align:center;'>".$Email_Status."</td>
-<td style='text-align:center;'>".$Email_Status_Date."</td>
-<td style='text-align:center;'>".$Email_Status_Time."</td>
-<td>".$Email_Body."</td>
+<th>".$ID."</td>
+<th>".$Company_Email."</td>
+<th>".$Company_Name."</td>
+<th>".$Email_Status."</td>
+<th>".$Email_Status_Date."</td>
+<th>".$Email_Status_Time."</td>
+<td style='text-algin:left;'>".$Email_Body."</td>
 </tr>";
 }
 ?>
